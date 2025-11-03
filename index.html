@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                        <div class="container-fluid">
+                            <a class="navbar-brand fw-bold text-primary" href="index.html">
+                                <h4><b>Ehsan Ahmad Shaik</b></h4>
+                            </a>
+                            <div class="collapse navbar-collapse justify-content-end">
+                                <div class="navbar-nav" id="links">
+                                    <a class="nav-link" href="#aboutmecontainer">About</a>
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                    <a class="nav-link" href="#skills">Skills</a>
+                                    <a class="nav-link" href="#educ">Education</a>
+                                    <a class="nav-link" href="#">Certifications</a>
+                                    <a class="nav-link" href="#contactme">Contact</a>
+                                    <button type="button" class="btn btn-light" onclick="downloadFile()">Resume</button>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- about me -->
+        <div id="aboutmecontainer">
+            <div class="container bg-body-tertiary p-5">
+                <div class="row">
+                    <h2 class="text-primary">About-Me</h2>
+                    <div class="col-md-6 pt-5" id="aboutme">
+                        <span>
+                            <h3>Software Engineer</h3><br>
+                            I am a passionate and results-driven Java Full Stack Developer with hands-on experience in
+                            building dynamic, secure, and scalable web applications. My expertise spans both backend and
+                            frontend development, allowing me to design and implement complete end-to-end solutions.
+                            <br>
+                            On the backend, I specialize in Java, Spring Framework (Spring Boot, Spring MVC, Spring Data
+                            JPA, Spring Security), and Hibernate, with strong proficiency in developing RESTful APIs and
+                            microservices architectures. I am skilled in using MySQL for database management and
+                            integrating
+                            applications using JPA and Hibernate ORM.
+                            <br>
+                            On the frontend, I have solid experience with HTML, CSS, JavaScript, Bootstrap, and
+                            Thymeleaf,
+                            enabling me to create responsive and user-friendly interfaces.
+                            <br>
+                            I follow best practices in software development, including version control using Git and
+                            GitHub,
+                            and I am comfortable working in collaborative, Agile-based environments.
+                            <br>
+                            I’m always eager to learn new technologies, improve system performance, and contribute to
+                            building innovative software solutions that solve real-world problems.
+                        </span>
+                    </div>
+                    <div class="col-md-4 offset-1 pt-5">
+                        <div class="card w-100" id="card" style="width:350px;">
+                            <img class="card-img-top" src="./assets/images/IMG_20221118_192956.jpg"
+                                alt="Card image cap">
+                            <div class="card-body" id="icons">
+                                <span id="gmail"><a href="mailto:shaikehsanahmad@gmail.com"><i class="fa-solid fa-envelope  px-5"></i></a></span>
+                                <span id="linkedin"><a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372"><i class="fa-brands fa-linkedin  px-5"></i></a></span>
+                                <span id="github"><a href="https://github.com/ehsanahmad0501"><i class="fa-brands fa-github  px-5"></i></a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- projects -->
+            <div class="container bg-body-tertiary p-5" id="projects">
+                <div class="row">
+                    <h2 class="text-primary">Projects</h2>
+                    <div class="col-md p-5">
+
+                        <div class="row row-cols-1 row-cols-md-3 g-4">
+                            <div class="col-md">
+                                <div class="card" id="c">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="card" id="c">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural
+                                            lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md">
+                                <div class="card" id="c">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Project title</h5>
+                                        <p class="card-text">This is a longer card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- skills -->
+
+        <div class="container bg-body-tertiary p-5" id="skills">
+            <div class="row">
+                <h2 class="text-primary">Technical-Skills</h2>
+                <div class="col-md p-5">
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col-md mb-4">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Languages & Core</h5>
+                                    <hr>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/java.png"
+                                            alt="Java logo">
+                                        <br>Java
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/java-script.png"
+                                            alt="JavaScript logo">
+                                        <br>JavaScript
+                                    </p>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/mysql.png"
+                                            alt="JavaScript logo">
+                                        <br>MySql
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Backend Frameworks</h5>
+                                    <hr>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/springboot.png"
+                                            alt="spring logo">
+                                        <br>Spring
+                                    </p>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/springboot.png"
+                                            alt="springboot logo">
+                                        <br>Spring Boot
+                                    </p>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/Hibernate.png"
+                                            alt="hibernate logo">
+                                        <br>Hibernate
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Frontend</h5>
+                                    <hr>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/html-5.png"
+                                            alt="html logo">
+                                        <br>Html
+                                    </p>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/css-3.png"
+                                            alt="css logo">
+                                        <br>CSS
+                                    </p>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/java-script.png"
+                                            alt="JavaScript logo">
+                                        <br>JavaScript
+                                    </p>
+                                    <p class="card-text px-2" id="icon"><img src="./assets/images/bootstrap.png"
+                                            alt="bootstrap logo">
+                                        <br>Bootstrap
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col-md mb-4">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Database</h5>
+                                    <hr>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/mysql.png"
+                                            alt="mysql logo">
+                                        <br>MySql
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/Jdbc.png"
+                                            alt="jdbc logo">
+                                        <br>JDBC
+                                    </p>
+                                    <p class="card-text px-3" id="icon"><img src="./assets/images/springdatajpa.png"
+                                            alt="springdatajpa logo">
+                                        <br>SpringData-JPA
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">APIs & Architecture</h5>
+                                    <hr>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/rest.png"
+                                            alt="restful logo">
+                                        <br>RESTful APIs
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/microservice.png"
+                                            alt="microservices logo">
+                                        <br>Microservices
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Security</h5>
+                                    <hr>
+                                    <p class="card-text px-5" id="icon"><img src="./assets/images/cyber-security.png"
+                                            alt="springsecurity logo">
+                                        <br>Spring-Security
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col-md w-50">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Version Control</h5>
+                                    <hr>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/git.png"
+                                            alt="git logo">
+                                        <br>Git
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/github.png"
+                                            alt="github logo">
+                                        <br>GitHub
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md w-50">
+                            <div class="card" id="c">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tools & Practices</h5>
+                                    <hr>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/Apache Maven.png"
+                                            alt="maven logo">
+                                        <br>Maven
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/Postman.png"
+                                            alt="postman logo">
+                                        <br>PostMan
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img src="./assets/images/Eclipse IDE.png"
+                                            alt="eclipse logo">
+                                        <br>EclipseIDE
+                                    </p>
+                                    <p class="card-text px-4" id="icon"><img
+                                            src="./assets/images/Visual Studio Code (VS Code).png" alt="vscode logo">
+                                        <br>VSCode
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="container p-5 bg-body-tertiary" id="educ">
+            <div class="row">
+                <h2 class="text-primary">Educational-Qualifications</h2>
+                <div class="col-md pt-5">
+                    <div class="card w-100" id="c">
+                        <div class="card-body">
+                            <h5 class="card-title">Master of Computer Applications (MCA)</h5>
+                            <p class="card-text" style="font-size: 13px;">Nimra College of Engineering and Technology (NCET), Vijayawada
+                                <br>
+                                Affiliated with Jawaharlal Nehru Technological University Kakinada (JNTUK) <br>
+                                2023-2025 <br>
+                                <b>CGPA:</b> 8.0
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card w-100 mt-3" id="c">
+                        <div class="card-body">
+                            <h5 class="card-title">Bachelor of Science (BSC)</h5>
+                            <p class="card-text" style="font-size: 13px;">Nalanda Degree College, Vijayawada
+                                <br>
+                                Affiliated with Krishna University (KrU), Machilipatnam <br>
+                                2020-2023 <br>
+                                <b>CGPA:</b> 8.2
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Contact-Me -->
+
+        <div class="container p-5 bg-body-tertiary" id="contactme">
+            <div class="row">
+                <h2 class="text-primary">Contact-Me</h2>
+                <div class="col-md-6 pt-5">
+                    <h5>Get In Touch</h5>
+                    <p class="fw-light">Feel free to contact me for any work or suggestions below.</p><br>
+                    <h6><i class="fa-solid fa-envelope" style="color: blue;"><a href="mailto:shaikehsanahmad@gmail.com" class="text-dark"></i> shaikehsanahmad@gmail.com</a></h6><br>
+                    <h6><i class="fa-brands fa-linkedin" style="color: blue;"><a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372" class="text-dark"></i> linkedin.com/in/ehsanahmad</a></h6><br>
+                    <h6><i class="fa-brands fa-github" style="color: blue;"><a href="https://github.com/ehsanahmad0501" class="text-dark"></i> github.com/ehsanahmad/0501</a></h6>
+                </div>
+                <div class="col-md-6 pt-5">
+                    <div class="card" id="c" style="width:100%;">
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group mt-2">
+                                    <label for="name">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="emailId">Your Email</label>
+                                    <input type="email" class="form-control" id="emailId" required>
+                                </div>
+                                <div class="form-group mt-2">
+                                    <label for="message">Message</label>
+                                    <textarea class="form-control" id="message" rows="3" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary mt-2" onclick="sendEmail()">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="container p-5 bg-body-tertiary" id="footer">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Ehsan Ahmad Shaik</h5>
+                    <p class="fw-light">Software Engineer with a passion for creating innovative, scalable, and <br>
+                        high-performance solutions.</p>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="px-4">Links</h6>
+                    <ul style="list-style-type: none;" class="text-start" id="footerlinks">
+                        <li><a href="#aboutmecontainer">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#educ">Education</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2" id="footericons">
+                    <h6>Connect</h6>
+                    <a href="mailto:shaikehsanahmad@gmail.com" class="d-inline-block mx-2"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372" class="d-inline-block mx-2"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ehsanahmad0501" class="d-inline-block mx-2"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="row mt-5">
+                <div class="col-md text-center">
+                    <p class="fs-6 fw-light">&copy; 2025 Ehsan Ahmad Shaik. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

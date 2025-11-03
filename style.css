@@ -1,0 +1,72 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+h2{
+    text-align: center;
+}
+#links>a{
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 3px;
+}
+#links>a:hover{
+    color:blue;
+    background: lightgray;
+    border-radius: 5px;
+}
+
+#aboutme{
+    text-align: justify;
+    word-spacing: 3px;
+    line-height: 28px;
+}
+#card:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#gmail,#linkedin,#github{
+    font-size: 25px; 
+}
+#icons>span>a{
+    color: black;
+}
+#icons>span>a:hover{
+    color: blue;
+}
+#c:hover{
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#aboutmecontainer,#projects,#skills,#educ,#contactme,#footer{
+    margin-top: 150px;
+}
+#icon{
+    float: left;
+    gap: 10px; 
+}
+#icon>img{
+    background: lightgrey;
+    width: 40px;
+    padding: 5px;
+    border-radius: 10px;
+}
+#footerlinks a {
+  text-decoration: none;
+  color: inherit; 
+}
+#footerlinks a:hover {
+  text-decoration: none;
+  color: #007bff;
+}
+#footericons>a{
+    color: black;
+}
+#footericons>a:hover{
+    color: blue;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    border-radius: 20px;
+}
