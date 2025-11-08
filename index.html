@@ -24,12 +24,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md">
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+                    <nav class="navbar navbar-expand-md bg-body-tertiary fixed-top">
                         <div class="container-fluid">
                             <a class="navbar-brand fw-bold text-primary" href="index.html">
-                                <h4><b>Ehsan Ahmad Shaik</b></h4>
+                                <h4 class="mb-0"><b>Ehsan Ahmad Shaik</b></h4>
                             </a>
-                            <div class="collapse navbar-collapse justify-content-end">
+
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                                 <div class="navbar-nav" id="links">
                                     <a class="nav-link" href="#aboutmecontainer">About</a>
                                     <a class="nav-link" href="#projects">Projects</a>
@@ -37,7 +43,8 @@
                                     <a class="nav-link" href="#educ">Education</a>
                                     <a class="nav-link" href="#">Certifications</a>
                                     <a class="nav-link" href="#contactme">Contact</a>
-                                    <button type="button" class="btn btn-light" onclick="downloadFile()">Resume</button>
+                                    <button type="button" class="btn btn-light ms-2"
+                                        onclick="downloadFile()">Resume</button>
                                 </div>
                             </div>
                         </div>
@@ -82,9 +89,12 @@
                             <img class="card-img-top" src="./assets/images/IMG_20221118_192956.jpg"
                                 alt="Card image cap">
                             <div class="card-body" id="icons">
-                                <span id="gmail"><a href="mailto:shaikehsanahmad@gmail.com"><i class="fa-solid fa-envelope  px-5"></i></a></span>
-                                <span id="linkedin"><a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372"><i class="fa-brands fa-linkedin  px-5"></i></a></span>
-                                <span id="github"><a href="https://github.com/ehsanahmad0501"><i class="fa-brands fa-github  px-5"></i></a></span>
+                                <span id="gmail"><a href="mailto:shaikehsanahmad@gmail.com"><i
+                                            class="fa-solid fa-envelope  px-5"></i></a></span>
+                                <span id="linkedin"><a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372"><i
+                                            class="fa-brands fa-linkedin  px-5"></i></a></span>
+                                <span id="github"><a href="https://github.com/ehsanahmad0501"><i
+                                            class="fa-brands fa-github  px-5"></i></a></span>
                             </div>
                         </div>
                     </div>
@@ -309,7 +319,8 @@
                     <div class="card w-100" id="c">
                         <div class="card-body">
                             <h5 class="card-title">Master of Computer Applications (MCA)</h5>
-                            <p class="card-text" style="font-size: 13px;">Nimra College of Engineering and Technology (NCET), Vijayawada
+                            <p class="card-text" style="font-size: 13px;">Nimra College of Engineering and Technology
+                                (NCET), Vijayawada
                                 <br>
                                 Affiliated with Jawaharlal Nehru Technological University Kakinada (JNTUK) <br>
                                 2023-2025 <br>
@@ -342,9 +353,13 @@
                 <div class="col-md-6 pt-5">
                     <h5>Get In Touch</h5>
                     <p class="fw-light">Feel free to contact me for any work or suggestions below.</p><br>
-                    <h6><i class="fa-solid fa-envelope" style="color: blue;"><a href="mailto:shaikehsanahmad@gmail.com" class="text-dark"></i> shaikehsanahmad@gmail.com</a></h6><br>
-                    <h6><i class="fa-brands fa-linkedin" style="color: blue;"><a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372" class="text-dark"></i> linkedin.com/in/ehsanahmad</a></h6><br>
-                    <h6><i class="fa-brands fa-github" style="color: blue;"><a href="https://github.com/ehsanahmad0501" class="text-dark"></i> github.com/ehsanahmad/0501</a></h6>
+                    <h6><i class="fa-solid fa-envelope" style="color: blue;"><a href="mailto:shaikehsanahmad@gmail.com"
+                                class="text-dark"></i> shaikehsanahmad@gmail.com</a></h6><br>
+                    <h6><i class="fa-brands fa-linkedin" style="color: blue;"><a
+                                href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372" class="text-dark"></i>
+                        linkedin.com/in/ehsanahmad</a></h6><br>
+                    <h6><i class="fa-brands fa-github" style="color: blue;"><a href="https://github.com/ehsanahmad0501"
+                                class="text-dark"></i> github.com/ehsanahmad/0501</a></h6>
                 </div>
                 <div class="col-md-6 pt-5">
                     <div class="card" id="c" style="width:100%;">
@@ -362,7 +377,8 @@
                                     <label for="message">Message</label>
                                     <textarea class="form-control" id="message" rows="3" required></textarea>
                                 </div>
-                                <button type="submit" class="btn btn-primary mt-2" onclick="sendEmail()">Send Message</button>
+                                <button type="submit" class="btn btn-primary mt-2" onclick="sendEmail()">Send
+                                    Message</button>
                             </form>
                         </div>
                     </div>
@@ -389,9 +405,12 @@
                 </div>
                 <div class="col-md-2" id="footericons">
                     <h6>Connect</h6>
-                    <a href="mailto:shaikehsanahmad@gmail.com" class="d-inline-block mx-2"><i class="fa-solid fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372" class="d-inline-block mx-2"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/ehsanahmad0501" class="d-inline-block mx-2"><i class="fa-brands fa-github"></i></a>
+                    <a href="mailto:shaikehsanahmad@gmail.com" class="d-inline-block mx-2"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://www.linkedin.com/in/ehsan-ahmad-shaik-a70276372" class="d-inline-block mx-2"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ehsanahmad0501" class="d-inline-block mx-2"><i
+                            class="fa-brands fa-github"></i></a>
                 </div>
             </div>
             <hr>
